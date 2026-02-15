@@ -59,7 +59,7 @@
 
 ### 4C. Universal Standards
 *   **Error Handling:** Never swallow errors silently. Use the language's idiomatic error model (exceptions, Result types, error returns, pcall/xpcall).
-*   **Naming:** Descriptive, consistent, and following the language's conventions (`snake_case` in Python/Lua, `camelCase` in JS/TS, `PascalCase` for Go exports).
+*   **Naming:** Descriptive, consistent, and following the language's conventions (e.g., `snake_case` in Python/Rust; `camelCase`/`PascalCase` in Go & JS/TS; conventions vary for C/C++/Lua, so follow project style).
 *   **Structure:** Logical file/module organization. No god files. No 500-line functions.
 *   **Comments:** Explain *why*, not *what*. The code explains what.
 
