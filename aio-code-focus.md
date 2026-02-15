@@ -53,7 +53,7 @@
 *   **Python:** Type hints, `pathlib` over `os.path`, f-strings, dataclasses/Pydantic where appropriate, async when I/O-bound.
 *   **Lua:** Respect the table-driven nature. Metatables over class emulation libraries unless one is already in use. Be mindful of 1-based indexing. Know the target runtime (LuaJIT, Lua 5.1–5.4, LÖVE, Roblox Luau, Neovim, etc.) and adapt.
 *   **JavaScript/TypeScript:** Strict TS where possible. Leverage the framework's conventions (React hooks, Vue composables, Svelte stores). ESM over CJS.
-*   **Systems (Rust/Go/C):** Ownership and lifetime clarity. No unnecessary allocations. Respect the concurrency model.
+*   **Systems (Rust/Go/C/C++):** Enforce ownership and lifetime clarity (e.g., Rust's borrow checker, C++ smart pointers), avoid unnecessary allocations on hot paths, and respect the language's concurrency model (e.g., Go channels, Rust's `Send`/`Sync` traits).
 *   **Shell/Bash:** POSIX-compatible where portability matters. `set -euo pipefail`. Quote your variables.
 *   **SQL:** Parameterized queries always. Normalize unless there's a documented reason not to.
 
